@@ -64,7 +64,7 @@ No campo ConnectionStrings presente no arquivo ```appsettings.json``` se encontr
 | User Id | Usuário para acessar o database |
 | Password | Senha para acessar o database |
 
-Após atualizar a string de conexão, é necessário criar uma migração para modelar o banco de dados de acordo com as necessidades do projeto e, em seguida, atualizar o banco de dados. Isso pode ser feito através do seguinte comando (que deve ser executado na pasta raiz ```/PetHero```):
+Após atualizar a string de conexão, é necessário criar uma migração para modelar o banco de dados de acordo com as necessidades do projeto e, em seguida, atualizar o banco de dados. Isso pode ser feito através dos seguintes comandos (que devem ser executados na pasta raiz ```/PetHero```):
 
 ```
 # dotnet ef migrations add InitialCreate

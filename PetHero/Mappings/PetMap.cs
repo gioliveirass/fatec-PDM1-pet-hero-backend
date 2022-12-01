@@ -9,6 +9,9 @@ namespace PetHero.Mappings
         public void Configure(EntityTypeBuilder<Pet> builder)
         {
             builder.Property(property => property.Name).IsRequired();
+            builder.Property(property => property.Gender).IsRequired();
+            builder.Property(property => property.Type).IsRequired();
+            builder.Property(property => property.Birthday).IsRequired();
         }
     }
 }

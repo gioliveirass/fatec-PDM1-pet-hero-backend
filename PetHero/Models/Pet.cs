@@ -11,5 +11,8 @@
 
         public Guid ID { get; set; }
         public string Name { get; set; }
+        public string Gender { get; set; }
+        public int Type { get; set; }
+        public int Birthday { get; set; }
     }
 }

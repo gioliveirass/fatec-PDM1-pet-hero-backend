@@ -9,12 +9,6 @@ namespace PetHero.Mappings
         public void Configure(EntityTypeBuilder<Pet> builder)
         {
             builder.Property(property => property.Name).IsRequired();
-            builder.Property(property => property.DateOfCreation).IsRequired();
-
-            builder.HasOne(property => property.Tutor)
-                .WithMany(property => property.Pets)
-                .HasForeignKey(property => property.DepartmentID)
-                .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

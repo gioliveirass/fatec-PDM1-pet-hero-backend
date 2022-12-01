@@ -9,10 +9,8 @@ namespace PetHero.Context
         public DataContext(DbContextOptions options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new TutorMap());
             modelBuilder.ApplyConfiguration(new PetMap());
         }
-        public DbSet<Tutor> Tutors { get; set; }
         public DbSet<Pet> Pets { get; set; }
     }
 }

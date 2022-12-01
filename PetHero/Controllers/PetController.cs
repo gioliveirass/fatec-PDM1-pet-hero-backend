@@ -46,8 +46,8 @@ namespace PetHero.Controllers
         public async Task<IActionResult> Delete(Guid id)
         {
             var response = await _myContext.Pets.
-               AsQueryable()
-               .FirstOrDefaultAsync(x => x.ID == id);
+                AsQueryable()
+                .FirstOrDefaultAsync(x => x.ID == id);
 
             if (response == null)
             {
